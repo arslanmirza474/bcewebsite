@@ -5,7 +5,11 @@
     width: 136px;
     height: 71px;
 }
-
+/* Assuming your SVG has a class named "svg-element" */
+.svg-element {
+    filter: brightness(0) invert(1) grayscale(100%) brightness(1000%);
+  }
+  
 * {
     box-sizing: border-box;
     margin: 0;

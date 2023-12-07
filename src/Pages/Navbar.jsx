@@ -92,7 +92,7 @@ function Navbar(){
       <div className="header__inner__blk">
         <div className="header__logo">
           <Link to="/">
-            <img src={logo} style={{width:"136px", height:"71px",marginRight:"-37px"}} alt="" />
+            <img src={logo} className='svg-element' style={{width:"136px", height:"71px",marginRight:"-37px"}} alt="" />
           </Link>
         </div>
         <div className="header__right__blk">

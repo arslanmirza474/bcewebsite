@@ -17,7 +17,7 @@ function Footer (){
         <div className="col-xl-3">
           <div className="footer__logo">
             <a href="#">
-              <img src={mianlogo} style={{width:"136px", height:"71px"}} alt="" />
+              <img className="svg-element" src={mianlogo} style={{width:"136px", height:"71px"}} alt="" />
             </a>
             <p>Where we drive your insurance needs forward!</p>
           </div>
