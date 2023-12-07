@@ -9,8 +9,76 @@ import maper from "./images/map_ico.svg"
 import email from "./images/email_ico.svg"
 import call from "./images/call_ico.svg"
 import sectionline from "./images/section_title_shape.png"
+import { useState } from 'react';
+import axios from "axios"
 
 function Contactus(){
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
+
+
+//   fetch('https://sheetdb.io/api/v1/haf87t9vvttcy', {
+//     method: 'POST',
+//     headers: {
+//         'Accept': 'application/json',
+//         'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify({
+//         data: [
+//             {
+//                 'Name': "INCREMENT",
+//                 'Email': "Mark",
+//                 'Phone Number': 18
+//             }
+//         ]
+//     })
+// })
+//   .then((response) => response.json())
+//   .then((data) => console.log(data));
+
+
+
+
+
+
+  const handleButtonClick = async () => {
+    const formData = {
+      data: [
+        {
+          id:"INCREMENT",
+          Name: name,
+          Email: email,
+          Phone: phone,
+          Message: message,
+        },
+      ],
+    };
+
+    try {
+      await axios.post(
+        'https://sheetdb.io/api/v1/ndfj5zbtoj6mu',
+        formData,
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
+
+      // Reset form data after successful submission
+      setName('');
+      setEmail('');
+      setPhone('');
+      setMessage('');
+    } catch (error) {
+      console.error('Error appending data to SheetDB:', error);
+      // Handle error
+    }
+  };
+  
+
     return(
         <>
     <>
@@ -98,19 +166,27 @@ function Contactus(){
                   </div>
                   <div className="hero__form__step">
                     <div className="hero__single__form__step matheus_input">
-                      <input type="text" placeholder="Your name" />
+                      <input type="text" placeholder="Your name" 
+             value={name}
+             onChange={(e) => setName(e.target.value)} />
                     </div>
                     <div className="hero__single__form__step">
-                      <input type="email" placeholder="E-mail" />
+                      <input type="email" placeholder="E-mail" 
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}/>
                     </div>
                     <div className="hero__single__form__step">
-                      <input type="text" placeholder="Phone number" />
+                      <input type="text" placeholder="Phone number" 
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}/>
                     </div>
                     <div className="hero__single__form__step" >
-                      <input type="text" className="mt-0" placeholder="Message" style={{height:"108px"}} />
+                      <input 
+                value={message}
+                onChange={(e) => setMessage(e.target.value)} type="text" className="mt-0" placeholder="Message" style={{height:"108px"}} />
                     </div>
                     <div className="form__btn">
-                      <button type="button">I want to be a customer</button>
+                      <button onClick={handleButtonClick} type="button">I want to be a customer</button>
                       <p>
                         By submitting your data, you authorize us to contact
                         you, To find out more, see our{" "}

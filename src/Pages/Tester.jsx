@@ -3,7 +3,7 @@ import hero from "./images/hero_content_shape.png"
 import greenshield from "./images/ShieldCheck.svg"
 import thumbnaill from "./images/platform_thumb_1.png"
 import envolope from "./images/EnvelopeOpen.svg"
-import phone from "./images/Phone.svg"
+import phonee from "./images/Phone.svg"
 import Sponsorslider from "./Sponsorslider"
 import Scrollable from "./Scrollable"
 import Navbar from "./Navbar"
@@ -15,7 +15,50 @@ import dollar from "./images/CurrencyDollar.svg"
 import jeep from "./images/Jeep.svg"
 import call from "./images/PhoneCall.svg"
 import medal from "./images/Medal.svg"
+import { useState } from "react"
+import axios from "axios"
+
 function Tester (){
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+
+  const handleButtonClick = async () => {
+    const formData = {
+      data: [
+        {
+          id:"INCREMENT",
+          Name: name,
+          Email: email,
+          Phone: phone,
+
+        },
+      ],
+    };
+
+    try {
+      await axios.post(
+        'https://sheetdb.io/api/v1/ndfj5zbtoj6mu',
+        formData,
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
+
+      // Reset form data after successful submission
+      setName('');
+      setEmail('');
+      setPhone('');
+  
+    } catch (error) {
+      console.error('Error appending data to SheetDB:', error);
+      // Handle error
+    }
+  };
+  
+
     return(
       
         <>
@@ -102,16 +145,22 @@ function Tester (){
                 </div>
                 <div className="hero__form__step">
                   <div className="hero__single__form__step matheus_input">
-                    <input type="text" placeholder="Your Name" />
+                    <input type="text" placeholder="Your Name" 
+                     value={name}
+                     onChange={(e) => setName(e.target.value)}/>
                   </div>
                   <div className="hero__single__form__step">
-                    <input type="email" placeholder="E-mail" />
+                    <input type="email" placeholder="E-mail"
+                     value={email}
+                     onChange={(e) => setEmail(e.target.value)} />
                   </div>
                   <div className="hero__single__form__step">
-                    <input type="text" placeholder="Phone number" />
+                    <input type="text" placeholder="Phone number"
+                     value={phone}
+                     onChange={(e) => setPhone(e.target.value)} />
                   </div>
                   <div className="form__btn">
-                    <button type="button">I want to be a customer</button>
+                    <button onClick={handleButtonClick} type="button">I want to be a customer</button>
                     <p>
                       By submitting your data, you authorize us to contact you,
                       To find out more, see our <a href="#">Privacy policy</a>
@@ -173,7 +222,7 @@ function Tester (){
                   <div className="trucking__card">
                     <a href="tell">
                       <span>
-                        <img src={phone} alt="" />
+                        <img src={phonee} alt="" />
                       </span>
                       <small>Talk to us by Phone</small>
                       <h4>(301) 591 - 6550</h4>
