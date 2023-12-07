@@ -1367,7 +1367,7 @@ textarea {
 }
 
 .contact__inner__blk {
-    background-image: url(./Pages/images/contact__bg.png);
+    background-image: url(./Pages/images/contact__bg.jpg);
     padding: 60px;
     border-radius: 18px;
     background-size: cover;
@@ -1479,7 +1479,7 @@ textarea {
     background-image: url(./Pages/images/footer_bg.jpg);
 }
 .trucking__area{
-    background-image: url(./Pages/images/trucking__bg.png);
+    background-image: url(./Pages/images/trucking__bg.jpg);
 }
 @media (min-width: 200px) and (max-width: 500px) {
     .trucking__area{
