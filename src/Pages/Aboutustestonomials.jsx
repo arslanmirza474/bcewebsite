@@ -1,8 +1,8 @@
 import sectionimg from "./images/section_title_shape.png"
-import partner1 from "./images/leader__ship__thumb_1.png"
-import partner2 from "./images/leader__ship__thumb_2.png"
+import partner1 from "./images/leader__ship__thumb_1.jpg"
+import partner2 from "./images/leader__ship__thumb_2.jpg"
 
-import partner3 from "./images/leader__ship__thumb_3.png"
+import partner3 from "./images/leader__ship__thumb_3.jpg"
 import { useEffect } from "react";
 
 

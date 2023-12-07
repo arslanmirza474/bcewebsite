@@ -7,7 +7,7 @@ import Navbar from "./Navbar"
 import Footer from "./Footer"
 import quote6 from "./images/quotes_ico_6.svg"
 import quote4 from "./images/quotes_ico_4.svg"
-import thumb2 from "./images/smiling.png"
+import thumb2 from "./images/smiling.jpg"
 import quote5 from "./images/quotes_ico_5.svg"
 import thumb1 from "./images/bluetruck.png"
 
