@@ -5,7 +5,20 @@ import facebook from "./images/FacebookLogo.svg"
 import insta from "./images/InstagramLogo.svg"
 import youtube from "./images/youtube.png"
 import mianlogo from "./images/LOGO BOLANOS 2024 PDF.svg"
-function Footer (){
+import { Link } from "react-router-dom"
+import React from "react"
+
+class Footer extends React.Component {
+  handleEmailClick = () => {
+    console.log('Email link clicked');
+    window.location.href = 'mailto:Operations@bceins.com';
+  }
+  
+  handlePhoneClick = () => {
+    console.log('Phone link clicked');
+    window.location.href = 'tel:+13015916550';
+  }
+  render() {
     return(
         <>
           <section
@@ -61,18 +74,20 @@ function Footer (){
                   </span>{" "}
                   66 Waverley Dr. Ste 630, Frederick, MD 21702
                 </a>
-                <a href="#">
-                  <span>
-                    <img src={envolope} alt="" />
-                  </span>{" "}
-                  Operations@bceins.com
-                </a>
-                <a href="#">
-                  <span>
-                    <img src={phone} alt="" />
-                  </span>{" "}
-                  301-591-6550
-                </a>
+               
+                <Link onClick={this.handleEmailClick}>
+  <span>
+    <img src={envolope} alt="" />
+  </span>{" "}
+  Operations@bceins.com
+</Link>
+<Link  onClick={this.handlePhoneClick}>
+  <span>
+    <img src={phone} alt="" />
+  </span>{" "}
+  301-591-6550
+</Link>
+
               </div>
             </div>
             <div className="footer__btn">
@@ -112,5 +127,5 @@ function Footer (){
   </section>
         </>
     )
-}
+}}
 export default Footer
