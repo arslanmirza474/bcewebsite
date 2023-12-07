@@ -17,7 +17,7 @@ import call from "./images/PhoneCall.svg"
 import medal from "./images/Medal.svg"
 import { useState } from "react"
 import axios from "axios"
-
+import { notification } from 'antd';
 function Tester (){
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -46,7 +46,7 @@ function Tester (){
           },
         }
       );
-
+      openNotificationWithIcon('success', formData);
       // Reset form data after successful submission
       setName('');
       setEmail('');
@@ -58,7 +58,13 @@ function Tester (){
     }
   };
   
-
+  
+  const openNotificationWithIcon = (type, formData) => {
+    notification[type]({
+      message: 'Thank you for registering',
+      description: `${formData.data[0].Name}, you will be contacted shortly!`,
+    });
+  };
     return(
       
         <>

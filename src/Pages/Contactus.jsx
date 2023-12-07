@@ -11,32 +11,12 @@ import call from "./images/call_ico.svg"
 import sectionline from "./images/section_title_shape.png"
 import { useState } from 'react';
 import axios from "axios"
-
+import { notification } from 'antd';
 function Contactus(){
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
-
-
-//   fetch('https://sheetdb.io/api/v1/haf87t9vvttcy', {
-//     method: 'POST',
-//     headers: {
-//         'Accept': 'application/json',
-//         'Content-Type': 'application/json'
-//     },
-//     body: JSON.stringify({
-//         data: [
-//             {
-//                 'Name': "INCREMENT",
-//                 'Email': "Mark",
-//                 'Phone Number': 18
-//             }
-//         ]
-//     })
-// })
-//   .then((response) => response.json())
-//   .then((data) => console.log(data));
 
 
 
@@ -66,7 +46,7 @@ function Contactus(){
           },
         }
       );
-
+      openNotificationWithIcon('success', formData);
       // Reset form data after successful submission
       setName('');
       setEmail('');
@@ -78,6 +58,17 @@ function Contactus(){
     }
   };
   
+  const openNotificationWithIcon = (type, formData) => {
+    notification[type]({
+      message: 'Thank you for registering',
+      description: `${formData.data[0].Name}, you will be contacted shortly!`,
+    });
+  };
+  
+
+
+
+
 
     return(
         <>
