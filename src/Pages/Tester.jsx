@@ -226,7 +226,7 @@ function Tester (){
               <div className="row g-4">
                 <div className="col-lg-6">
                   <div className="trucking__card">
-                    <a href="tell">
+                    <a href="tel:+13015916550">
                       <span>
                         <img src={phonee} alt="" />
                       </span>
@@ -237,7 +237,7 @@ function Tester (){
                 </div>
                 <div className="col-lg-6">
                   <div className="trucking__card">
-                    <a href="tell">
+                    <a href="mailto:Operations@bceins.com">
                       <span>
                         <img src={envolope} alt="" />
                       </span>
