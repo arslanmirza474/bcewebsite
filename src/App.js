@@ -11,11 +11,8 @@ import Automobileinsurance from './Pages/Automobileinsurance';
 import Generalliabilityinsurance from './Pages/Generalliabilityinsurance';
 import Motorcargoinsurance from './Pages/Motorcargoinsurance';
 import Physicaldemage from './Pages/Physicaldemage';
-// import { ReactGA4 } from 'react-analytics-ga4';
 function App() {
-  // useEffect(() => {
-  //   ReactGA4.initialize('G-4J9S083G47'); 
-  // }, []);
+
 
   return (
     <div className="App">

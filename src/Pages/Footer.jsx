@@ -98,7 +98,7 @@ class Footer extends React.Component {
           </div>
         </div>
       </div>
-      <div className="footer__bottom__area">
+      {/* <div className="footer__bottom__area">
         <div className="single__footer__bottom__step">
           <a href="#">
             <span>
@@ -119,7 +119,7 @@ class Footer extends React.Component {
             /bolanoscommercial
           </a>
         </div>
-      </div>
+      </div> */}
       <div className="footer__copyright__area">
         <p>© 2023 All Rights Reserved. Bolanos Commercial Enterprise, LLC</p>
       </div>

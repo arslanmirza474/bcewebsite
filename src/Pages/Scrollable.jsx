@@ -19,7 +19,7 @@ function Scrollable (){
     owl.owlCarousel({
       items: 1,
       loop: true,
-      autoplay: true,
+      autoplay: false,
       autoplayTimeout: 5000,
       autoplayHoverPause: true,
       animateIn: 'fadeIn',

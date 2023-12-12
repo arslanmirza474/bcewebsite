@@ -2,34 +2,43 @@ import profile from "./images/review_profile.png"
 import ico from "./images/quote_ico.svg"
 import { useEffect } from "react";
 import sectionimg from "./images/section_title_shape.png"
-
+import review1 from "./images/review1.png"
+import review2 from "./images/review2.png"
+import review3 from "./images/review3.png"
 function Testonomial (){
   useEffect(() => {
     window.jQuery(".review__inner__blk").owlCarousel({
       loop: true,
-      autoplay: true,
+      autoplay: false,
       autoplayTimeout: 5000,
       autoplayHoverPause: true,
       margin: 20,
       animateIn: 'fadeInDown',
       animateOut: 'fadeOutUp',
       nav: true,
-      navText: ['<i class="fas fa-chevron-left testimonial-left"></i>', '<i class="fas fa-chevron-right testimonial-right"></i>'],
+      navText: [
+        '<i class="fas fa-chevron-left testimonial-left"></i>',
+        '<i class="fas fa-chevron-right testimonial-right"></i>',
+      ],
       responsive: {
         0: {
           items: 1.1,
           slideBy: 1,
+          merge: 2, // Merge two items into one slide
+          stagePadding: 10, // Adjust this value based on your design
           animateIn: 'fadeInDown',
           animateOut: 'fadeOutUp',
-       
         },
         768: {
           items: 2,
+          merge: 2, // Merge two items into one slide
           autoplaySpeed: 5000, // Default speed for larger screens
         },
       },
     });
   }, []);
+  
+  
   
   
   
@@ -105,14 +114,12 @@ function Testonomial (){
               </div>
               <h4>
                 <span>
-                  <img src={profile} alt="" />
+                  <img src={review1} alt="" />
                 </span>{" "}
-                Alessandro Daluiz
+                Vinny Moreira
               </h4>
               <p>
-                I highly recommend this agency, they’re extremely knowledgeable
-                regarding all our truck insurance needs! We have all our
-                accounts with them, and we couldn’t be happier!
+              Best experience I've had with an insurance agency. They have excellent service, and a method of caring for their customers in the after sales.
               </p>
             </div>
             <div className="single__review__card">
@@ -121,14 +128,12 @@ function Testonomial (){
               </div>
               <h4>
                 <span>
-                  <img src={profile} alt="" />
+                  <img src={review2} alt="" />
                 </span>{" "}
-                Alessandro Daluiz
+                jay jay
               </h4>
               <p>
-                I highly recommend this agency, they’re extremely knowledgeable
-                regarding all our truck insurance needs! We have all our
-                accounts with them, and we couldn’t be happier!
+              Professional team and great experience always answer the phone and solve the issue and excellent service from Melvin and his team .
               </p>
             </div>
             <div className="single__review__card">
@@ -137,14 +142,12 @@ function Testonomial (){
               </div>
               <h4>
                 <span>
-                  <img src={profile} alt="" />
+                  <img src={review3} alt="" />
                 </span>{" "}
-                Alessandro Daluiz
+                Augusto faustino
               </h4>
               <p>
-                I highly recommend this agency, they’re extremely knowledgeable
-                regarding all our truck insurance needs! We have all our
-                accounts with them, and we couldn’t be happier!
+              Highly recommend, very good people to work with, the staff at this business are professional, knowledgeable and always willing to go the extra mile to ensure customer satisfaction.
               </p>
             </div>
             <div className="single__review__card">

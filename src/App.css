@@ -837,6 +837,8 @@ textarea {
     border-radius: 18px;
     background: #FFF;
     padding: 24px;
+    height: 250px;
+    /* width: 90%; */
     box-shadow: 0px 3px 46px -16px rgba(147, 147, 147, 0.25);
 }
 
