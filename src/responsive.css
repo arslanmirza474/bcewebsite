@@ -216,7 +216,9 @@
     .quote__ico {
         margin-bottom: 20px;
     }
-
+    .single__review__card{
+        height: 300px;
+    }
     .single__review__card h4 {
         font-size: 18px;
     }

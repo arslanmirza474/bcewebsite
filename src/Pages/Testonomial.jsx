@@ -24,6 +24,7 @@ function Testonomial (){
         0: {
           items: 1.1,
           slideBy: 1,
+          autoplay: false,
           merge: 2, // Merge two items into one slide
           stagePadding: 10, // Adjust this value based on your design
           animateIn: 'fadeInDown',
