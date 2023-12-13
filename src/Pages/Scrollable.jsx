@@ -20,8 +20,6 @@ function Scrollable (){
       items: 1,
       loop: true,
       autoplay: false,
-      autoplayTimeout: 5000,
-      autoplayHoverPause: true,
       animateIn: 'fadeIn',
       animateOut: 'fadeOut',
       nav: true,

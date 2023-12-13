@@ -7,11 +7,10 @@ import review2 from "./images/review2.png"
 import review3 from "./images/review3.png"
 function Testonomial (){
   useEffect(() => {
+    console.log("Initializing Owl Carousel");
     window.jQuery(".review__inner__blk").owlCarousel({
       loop: true,
       autoplay: false,
-      autoplayTimeout: 5000,
-      autoplayHoverPause: true,
       margin: 20,
       animateIn: 'fadeInDown',
       animateOut: 'fadeOutUp',
@@ -20,6 +19,7 @@ function Testonomial (){
         '<i class="fas fa-chevron-left testimonial-left"></i>',
         '<i class="fas fa-chevron-right testimonial-right"></i>',
       ],
+      
       responsive: {
         0: {
           items: 1.1,
@@ -34,10 +34,11 @@ function Testonomial (){
           items: 2,
           autoplay: false,
           merge: 2, // Merge two items into one slide
-          autoplaySpeed: 5000, // Default speed for larger screens
         },
       },
     });
+    console.log("Owl Carousel Initialized");
+
   }, []);
   
   
