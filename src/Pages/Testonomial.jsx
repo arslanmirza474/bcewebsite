@@ -21,7 +21,6 @@ import review16 from "./images/review16.png"
 
 function Testonomial (){
   useEffect(() => {
-    console.log("Initializing Owl Carousel");
     const owl = window.jQuery(".review__inner__blk");
   
     owl.owlCarousel({
@@ -56,7 +55,6 @@ function Testonomial (){
       mouseDrag: false, // Disable mouse dragging
     });
   
-    console.log("Owl Carousel Initialized");
   }, []);
   
   
