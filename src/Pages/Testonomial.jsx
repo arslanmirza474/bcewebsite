@@ -32,6 +32,7 @@ function Testonomial (){
         },
         768: {
           items: 2,
+          autoplay: false,
           merge: 2, // Merge two items into one slide
           autoplaySpeed: 5000, // Default speed for larger screens
         },

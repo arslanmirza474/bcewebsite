@@ -265,7 +265,9 @@
 /* LG Device :992px. */
 
 @media (min-width: 992px) and (max-width: 1200px) {
-
+    .single__review__card{
+        height: 300px;
+    }
     .header__right__blk {
         display: none;
     }
