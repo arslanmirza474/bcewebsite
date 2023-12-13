@@ -15,7 +15,7 @@ function Scrollable (){
     
   useEffect(() => {
     const owl = window.jQuery(".quotes__slide__wrapper");
-
+  
     owl.owlCarousel({
       items: 1,
       loop: true,
@@ -26,16 +26,19 @@ function Scrollable (){
       navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
       onChanged: (event) => {
         const isUpArrow = event.page.index === 0; // Set your condition here
-
+  
         const navText = isUpArrow
           ? ['<i class="fas fa-chevron-up"></i>', '<i class="fas fa-chevron-left"></i>']
           : ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'];
-
+  
         owl.find('.owl-nav button.owl-prev').html(navText[0]);
         owl.find('.owl-nav button.owl-next').html(navText[1]);
       },
+      touchDrag: false, // Disable touch dragging
+      mouseDrag: false, // Disable mouse dragging
     });
   }, []);
+  
 
 
 

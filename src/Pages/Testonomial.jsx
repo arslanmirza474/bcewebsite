@@ -8,7 +8,9 @@ import review3 from "./images/review3.png"
 function Testonomial (){
   useEffect(() => {
     console.log("Initializing Owl Carousel");
-    window.jQuery(".review__inner__blk").owlCarousel({
+    const owl = window.jQuery(".review__inner__blk");
+  
+    owl.owlCarousel({
       loop: true,
       autoplay: false,
       margin: 20,
@@ -19,7 +21,7 @@ function Testonomial (){
         '<i class="fas fa-chevron-left testimonial-left"></i>',
         '<i class="fas fa-chevron-right testimonial-right"></i>',
       ],
-      
+  
       responsive: {
         0: {
           items: 1.1,
@@ -36,10 +38,13 @@ function Testonomial (){
           merge: 2, // Merge two items into one slide
         },
       },
+      touchDrag: false, // Disable touch dragging
+      mouseDrag: false, // Disable mouse dragging
     });
+  
     console.log("Owl Carousel Initialized");
-
   }, []);
+  
   
   
   
