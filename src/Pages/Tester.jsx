@@ -30,13 +30,16 @@ function Tester (){
       openerrorNotificationWithIcon('error');
       return;
     }
-  
     const formData = {
-      name: name,
-      email: email,
-      phone: phone,
+      data: [
+        {
+          Name: name,
+          Email: email,
+          Phone: phone,
+        },
+      ],
     };
-  
+
     try {
       // Call the Google Apps Script API to append data to the Google Sheet
       await axios.post(

@@ -33,7 +33,7 @@ function Contactus(){
     const formData = {
       data: [
         {
-          id: "INCREMENT",
+
           Name: name,
           Email: email,
           Phone: phone,
