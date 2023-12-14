@@ -118,9 +118,9 @@ function Testonomial (){
               </div>
               <h4>
                 <span>
-                  <img src={profile} alt="" />
+                  <img src={review14} alt="" />
                 </span>{" "}
-                Alessandro Daluiz
+                alessandro daluz
               </h4>
               <p className="text-dark">
                 I highly recommend this agency, they’re extremely knowledgeable
