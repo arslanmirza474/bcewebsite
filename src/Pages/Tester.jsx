@@ -22,7 +22,7 @@ function Tester (){
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
-
+  const [loading, setLoading] = useState(true);
   
   const handleButtonClick = async () => {
     // Check if any input field is empty
@@ -30,6 +30,7 @@ function Tester (){
       openerrorNotificationWithIcon('error');
       return;
     }
+    setLoading(false);
     const formData = {
       data: [
         {
@@ -82,6 +83,9 @@ function Tester (){
     } catch (error) {
       console.error('Error:', error);
       // Handle error
+    }finally {
+      // Set loading to false at the end (whether it's successful or not)
+      setLoading(true);
     }
   };
   
@@ -202,7 +206,22 @@ function Tester (){
                      onChange={(e) => setPhone(e.target.value)} />
                   </div>
                   <div className="form__btn">
-                    <button onClick={handleButtonClick} type="button">I want to be a customer</button>
+                    <button onClick={handleButtonClick} type="button">
+                    {
+                      loading ?(
+                        <>
+                        I want to be a customer
+                        </>
+                        ):(
+                          <div className="text-align-center justify-content-center">
+                          <div class="spinner-border" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+                          <span className="mx-2"> Loading.....</span>
+                          </div>
+                         )
+                    }
+                  </button>
                     <p>
                       By submitting your data, you authorize us to contact you,
                       To find out more, see our <a href="#">Privacy policy</a>
