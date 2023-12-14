@@ -25,19 +25,25 @@ function Tester (){
 
   
   const handleButtonClick = async () => {
+    // Check if any input field is empty
+    if (!name || !email || !phone) {
+      openerrorNotificationWithIcon('error');
+      return;
+    }
+  
     const formData = {
       data: [
         {
-          id:"INCREMENT",
+          id: "INCREMENT",
           Name: name,
           Email: email,
           Phone: phone,
-
         },
       ],
     };
-
+  
     try {
+      // Call the first API to append data to SheetDB
       await axios.post(
         'https://sheetdb.io/api/v1/ndfj5zbtoj6mu',
         formData,
@@ -47,14 +53,27 @@ function Tester (){
           },
         }
       );
+  
+      // Call the second API to send an email
+      await axios.post(
+        'https://serverforstripe.vercel.app/api/sendemail',
+        formData.data[0],  // Send only the first data entry to the email API
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
+  
+      // Show success notification
       openNotificationWithIcon('success', formData);
+  
       // Reset form data after successful submission
       setName('');
       setEmail('');
       setPhone('');
-  
     } catch (error) {
-      console.error('Error appending data to SheetDB:', error);
+      console.error('Error:', error);
       // Handle error
     }
   };
@@ -66,6 +85,14 @@ function Tester (){
       description: `${formData.data[0].Name}, you will be contacted shortly!`,
     });
   };
+  
+  const openerrorNotificationWithIcon = (type) => {
+    notification[type]({
+      message: 'Missing Field',
+      description:"Please Fill All Of The Fields",
+    });
+  };
+
     return(
       
         <>
