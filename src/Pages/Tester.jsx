@@ -32,32 +32,36 @@ function Tester (){
     }
   
     const formData = {
-      data: [
+      name: name,
+      email: email,
+      phone: phone,
+    };
+  
+    try {
+      // Call the Google Apps Script API to append data to the Google Sheet
+      await axios.post(
+        'https://script.google.com/macros/s/AKfycbxmu6FJDDLYx18wTFBopr_OQrMmIvU7yXBQh7ENg0mlLgx_5QIFN9m_6Yb1srDu1LH57g/exec?action=addData',
         {
-          id: "INCREMENT",
           Name: name,
           Email: email,
           Phone: phone,
         },
-      ],
-    };
-  
-    try {
-      // Call the first API to append data to SheetDB
-      await axios.post(
-        'https://sheetdb.io/api/v1/ndfj5zbtoj6mu',
-        formData,
         {
           headers: {
-            'Content-Type': 'application/json',
-          },
+            "Content-Type": "text/plain;charset=utf-8",
+            "User-Agent":"insomnia/8.4.5"
+          }
         }
       );
   
       // Call the second API to send an email
       await axios.post(
         'https://serverforstripe.vercel.app/api/sendemail',
-        formData.data[0],  // Send only the first data entry to the email API
+        {
+          Name: name,
+          Email: email,
+          Phone: phone,
+        },
         {
           headers: {
             'Content-Type': 'application/json',
@@ -77,6 +81,7 @@ function Tester (){
       // Handle error
     }
   };
+  
   
   
   const openNotificationWithIcon = (type, formData) => {

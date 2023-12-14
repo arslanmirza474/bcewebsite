@@ -45,12 +45,18 @@ function Contactus(){
     try {
       // Call the first API to append data to SheetDB
       await axios.post(
-        'https://sheetdb.io/api/v1/ndfj5zbtoj6mu',
-        formData,
+        'https://script.google.com/macros/s/AKfycbxmu6FJDDLYx18wTFBopr_OQrMmIvU7yXBQh7ENg0mlLgx_5QIFN9m_6Yb1srDu1LH57g/exec?action=addData',
+        {
+          Name: name,
+          Email: email,
+          Phone: phone,
+          Message: message
+        },
         {
           headers: {
-            'Content-Type': 'application/json',
-          },
+            "Content-Type": "text/plain;charset=utf-8",
+            "User-Agent":"insomnia/8.4.5"
+          }
         }
       );
   
