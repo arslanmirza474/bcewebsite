@@ -1,0 +1,82 @@
+.small-screen-header{
+    display: none;
+}
+.Start_Nav{
+    margin: 40px 20px;
+    justify-content: space-between;
+}
+.circle_position{
+    width: 58px;
+height: 58px;
+background-color: #2A4764;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.mainlicom li{
+padding: 10px;
+}
+.mainlicom li:hover{
+background-color: aliceblue;
+}
+
+.Page_Name{
+    color: #30577E;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 130%; /* 31.2px */
+letter-spacing: -0.24px;
+
+}
+.first_name{
+    color: #FFF;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%; /* 24px */
+}
+.outof{
+    color: #FFF;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%;
+margin-top: 8px;
+}
+.next-step{
+    color: #2A4764;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+}
+.vehicles{
+    color: #30577E;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 800;
+}
+.next-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media screen and (max-width: 768px) {
+    .small-screen-header{
+        display: block !important;
+}
+}
+@media screen and (max-width: 768px) {
+
+.bsns-next{
+    width: 170px;
+}
+
+}

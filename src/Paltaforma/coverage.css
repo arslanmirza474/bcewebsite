@@ -1,0 +1,303 @@
+.coverage_first{
+    margin: auto;
+    margin-top: 40px;
+    width: 1059px;
+    height: 662px;
+    flex-shrink: 0;
+    border-radius: 17px;
+    background-color: white;
+    padding: 40px;
+}
+.jus{
+    margin-left: 7%;
+}
+.optionval {
+    padding: 50px !important;
+}
+.last_btns{
+    width: 1059px;
+    flex-shrink: 0;
+    background-color: white;
+    padding: 40px; 
+    margin: auto;
+}
+.Insurance_type{
+    margin: auto;
+    margin-top: 40px;
+    width: 1059px;
+    border-radius: 17px;
+    background-color: white;
+    padding: 40px;
+
+}
+.coverage_heading{
+    color: #263238;
+font-family: Raleway;
+font-size: 21px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.coverage_heading2{
+    color: #263238;
+font-family: Raleway;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-top: 40px;
+}
+.bluediv{
+    margin-top: 40px;
+    border-radius: 10px;
+background: #F0F8FF;
+height: 98px;
+}
+.bluediv2{
+    margin-top: 30px;
+    border-radius: 10px;
+background: #F0F8FF;
+height: 98px;
+}
+.bluediv3{
+    margin-top: 20px;
+    border-radius: 10px;
+height: 98px;
+}
+.bluediv4{
+    margin-top: 20px;
+    border-radius: 10px;
+    background: #F0F8FF;
+    height: 153px;
+}
+.customer_slect2{
+    width: 100%;
+    height: 51px;
+flex-shrink: 0;
+border-radius: 9px;
+border: 1px solid rgba(0, 0, 0, 0.42);
+background: #FFF;
+}
+.customer_slect{
+    width: 329px;
+height: 51px;
+flex-shrink: 0;
+border-radius: 9px;
+border: 1px solid rgba(0, 0, 0, 0.42);
+background: #FFF;
+}
+
+
+
+.underlinetext{
+    color: #30577E;
+font-family: Inter;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px; /* 158.824% */
+letter-spacing: 0.34px;
+text-decoration-line: underline;
+position: relative;
+margin: auto;
+width: fit-content;
+cursor: pointer;
+}
+.vehicle_coverage{
+    width: 1059px;
+border-radius: 17px;
+background-color: white;
+padding: 40px;
+margin: auto;
+margin-top: 40px;
+}
+.truck_detail{
+    margin-top: 40px;
+}
+.detailing{
+    color: #263238;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 39px;
+}
+.detail{
+    color: #263238;
+    font-family: Raleway;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;   
+}
+.newpage{
+    width: 1059px;
+height: 1091px;
+flex-shrink: 0;
+background-color: white;
+border-radius: 17px;
+margin-top: 40px;
+padding: 40px;
+}
+.circle{
+width: 30px;
+height: 30px;
+background-color: #30577E;
+border-radius: 50%;
+
+}
+.circle i{
+    margin-left: 8px;
+    margin-top: 7px
+}
+.jus {
+    justify-content: space-between;
+    column-gap: 20px;
+}
+.circle2{
+    width: 30px;
+    height: 30px;
+    background-color: #30577E;
+    border-radius: 50%;
+    
+    }
+    .circle2 i{
+        margin-left: 10px;
+        margin-top: 7px
+    }
+    .textval{
+        color: rgba(0, 0, 0, 0.70);
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 173.333% */
+letter-spacing: 0.3px;
+    }
+
+
+@media (max-width: 1024px){
+    .last_btns{
+        width: 95%;
+        margin: auto;
+    }
+    .coverage_first{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .vehicle_coverage{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn btn-primary{
+        margin-left: 30px;
+    }
+    .newpage{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Insurance_type{
+        width: 95%;
+        margin: auto;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 768px){
+    .btn btn-primary{
+        margin-left: 20px;
+    }  
+    .customer_slect{
+        width: 100%;
+    } 
+  
+    .customer_slect2{
+        width: 100%;
+    } 
+    .radio-label{
+        margin-bottom: 0px;
+    }
+    .intercoverpart{
+        align-items: flex-end;
+    }
+    .newpage{
+        height: 1150px;
+    }
+   
+}
+@media (max-width: 435px){
+    .bluediv3{
+        padding: 10px;
+    }
+    .coverage_first{
+        padding: 20px;
+    }
+    .customer_slect{
+        width: 100%;
+    }
+    .customer_slect2{
+        width: 100%;
+    }
+    .bluediv{
+        height: 176px;
+    }
+    .coverage_first{
+       height: 920px;
+    }
+    .bluediv2{
+        height: 176px;
+        padding: 10px;
+    }
+    .bluediv4{
+        height: 236px;
+        padding: 10px;
+    }
+   
+    .smalinput{
+        width: 100%;
+    }
+    .smalltxt{
+        width: 20%;
+    }
+    .trailer-small-screen{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+    .minussign{
+        width: fit-content;
+    }
+    .minustext{
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+    .truck_border {
+        width: 125px;
+        height: 130px;
+        text-align: center;
+    }
+    .card_title{
+        margin-left: 0px;
+    }
+    .newpage {
+        height: 1550px;
+    }
+    .circle-outer{
+        width: fit-content;
+    }
+    .gnrlliabtext{
+        width: fit-content;
+        align-items: center;
+    }
+    .moto-truck-cargo-crcl{
+        width: fit-content;
+    }
+    .moto-truck-cargo-txt{
+        width: fit-content;
+
+    }
+}

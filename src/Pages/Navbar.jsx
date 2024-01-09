@@ -135,19 +135,19 @@ function Navbar(){
                 <li>
                 <Link to="/aboutus">About Us</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/signup">Sign up</Link>
-                </li>
+                </li> */}
               </ul>
             </nav>
           </div>
           <div className="header__btn">
-            <Link to="/login" className="common__btn dark_bg_btn">
+            {/* <Link to="/login" className="common__btn dark_bg_btn">
               Login
-            </Link>
-            <a href="#" className="common__btn">
+            </Link> */}
+            <Link to="/get-a-quote" className="common__btn">
               Get a quote
-            </a>
+            </Link>
           </div>
         </div>
         <div className="open__menu">

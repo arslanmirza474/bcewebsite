@@ -1,0 +1,111 @@
+/* Modal.css */
+
+.modal-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+    padding-bottom: 20px;
+  }
+  .modalheading{
+    position: relative;
+  }
+  .truck_wrap{
+    margin-top: 30px;
+  }
+  .modal-content {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    position: relative;
+    width: 811px;
+    height: 583px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .modal_heading{
+    color: #000;
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+  }
+  .truck_border{
+    width: 148px;
+height: 160px;
+border-radius: 9px;
+border: 1px solid #D3D3D3;
+padding: 10px;
+position: relative;
+  }
+  .card_title{
+    color: #000;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display: flex;
+justify-content: center;
+  }
+  .truck_wrap{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .radio_button{
+    position: absolute;
+    right: -5px;
+   top:-9px;
+   font-size: 25px;
+ 
+  }
+  .green_check{
+    border: 3px solid white;
+    border-radius: 50%;
+  }
+  .btn-postion{
+    margin-left: auto;
+    }
+@media (max-width: 768px){
+  .modal-content{
+    height: auto;
+  }
+  .truck_wrap{
+    justify-content: center;
+  }
+  .lookupvin{
+    row-gap: 20px;
+  }
+}
+@media (max-width: 435px){
+  .close-btn{
+    margin-top: -10px;
+  }
+  .btn-postion{
+    margin-left: auto;
+  }
+  .modal-content{
+    max-height: 100vh; /* Adjust as needed */
+    overflow-y: auto;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+  .modal-overlay{
+    width: 100%;
+    margin: auto;
+  }
+}

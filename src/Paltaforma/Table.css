@@ -1,0 +1,336 @@
+.loanlbl{
+  margin-right: 120px;
+}
+.tabltd{
+  display: flex !important;
+  align-items: center !important;
+  column-gap: 10px !important;
+}
+.mainheading{
+  width: auto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    color: #000;
+}
+.infoblock{
+  display: inline-block;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #F2F2F7;
+}
+.infoblock .title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+.infoblock .value {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+.idtr{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}   
+/* .table_header {
+  height: 59px;
+  background: #2a4764;
+  border-radius: 9px; 
+ 
+}
+
+.table_header th {
+  padding: 10px; 
+  color: #FFF;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 31px; 
+letter-spacing: 0.32px;
+}      */
+
+
+.table_small_screen{
+  display: none;
+}
+/* Apply border-radius to the top corners of thead */
+.main_table thead th:first-child {
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+
+}
+
+.main_table thead th:last-child {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+
+}
+
+/* Style the th elements within the thead */
+.main_table th {
+  padding: 10px;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px; /* 193.75% */
+  letter-spacing: 0.32px;
+  background: #2a4764;
+}
+
+/* Style the rest of the table */
+.main_table {
+  width: 969px;
+}
+
+.main_table td,
+.main_table th {
+  padding: 10px;
+}
+
+.closebtn{
+width: 91px;
+height: 50px;
+flex-shrink: 0;
+border-radius: 6px;
+border: 1px solid #263238;
+color: #263238;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.confirmbtn{
+width: 150px;
+height: 50px;
+border-radius: 6px;
+background: #2A4764;
+color: #FFF;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.add_vehicle{
+  width: 1059px;
+height: fit-content;
+flex-shrink: 0;
+background-color: white;
+border-radius: 17px;
+margin: auto;
+margin-top: 40px;
+padding: 40px;
+}
+.vehicle_type{
+  color: rgba(38, 50, 56, 0.79);
+font-family: Inter;
+font-size: 17px;
+font-style: normal;
+font-weight: 700;
+line-height: 33px; /* 194.118% */
+letter-spacing: 0.34px;
+}
+.vehicle_typeans{
+  color: rgba(38, 50, 56, 0.79);
+font-family: Inter;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 33px; /* 194.118% */
+letter-spacing: 0.34px;
+display: flex;
+align-items: center;
+column-gap: 10px;
+}
+.inputfield{
+  width: 31px;
+  height: 31px;
+
+}
+.inputfield:active{
+  color: yellow;
+}
+.textcon{
+  color: #000;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 211.765% */
+  letter-spacing: 0.34px;
+}
+.text_input{
+  border-radius: 9px;
+border: 1px solid rgba(0, 0, 0, 0.42);
+height: 51px;
+width: 100%;
+}
+.btn_vin{
+  width: 108px;
+height: 51px;
+border-radius: 6px;
+background: #2A4764;
+color: #FFF;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.tips{
+  color: rgba(38, 50, 56, 0.79);
+font-family: Inter;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 33px; /* 194.118% */
+letter-spacing: 0.34px;
+}
+.all_tip{
+  color: rgba(38, 50, 56, 0.79);
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 33px; /* 235.714% */
+letter-spacing: 0.42px;
+}
+.vintxt{
+  width: 37%;
+}
+.inputfieldrow{
+  color: #000;
+font-family: Inter;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 211.765% */
+letter-spacing: 0.34px;
+width: 37%;
+}
+.vehicle_money{
+  color: #263238;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 33px; /* 165% */
+letter-spacing: 0.4px;
+}
+.heading_vehicle_add{
+  color: #263238;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 27px; /* 135% */
+letter-spacing: 0.2px;
+}
+.checkboxcss{
+  width: 28px;
+  height: 28px;
+}
+.vnloanlbl{
+  margin-right: 120px;
+}
+@media (max-width: 1024px){
+  .add_vehicle{
+    width: 95%;
+    margin: auto;
+    margin-top: 40px;
+  }
+ 
+}
+@media (max-width: 768px) {
+  .main_table{
+    display: none;
+  }
+  .table_small_screen{
+    display: block;
+    border-radius: 9px;
+border: 1px solid rgba(0, 0, 0, 0.42);
+padding: 10px;
+}
+
+.table_small_screen table{
+width: 100%;
+}
+  .table_heading_secction{
+    color: #000;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 31px; /* 193.75% */
+letter-spacing: 0.32px;
+padding-bottom: 8px;
+}
+.table_description{
+    color: rgba(38, 50, 56, 0.61);
+text-align: right;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.32px;
+padding-bottom: 8px;
+width: fit-content;
+margin-left: auto;
+
+
+  }
+  
+}
+@media (max-width:435px){
+  .vnloanlbl{
+    margin-right: 0px;
+  }
+  .vhclby{
+    justify-content: space-between;
+  }
+  .vehicltyp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+ 
+  .vehicle_type{
+    width: fit-content;
+  }
+  .vehicle_typeans{
+    width: fit-content;
+  }
+  .loanlbl {
+    margin-right: 50px;
+}
+
+.btn_vin{
+  width: 100%;
+  margin: 30px 0px;
+}
+.tip_content{
+  margin-top: 0px !important;
+  line-height: 3px;
+}
+.inputfieldrow{
+  margin-bottom: 10px;
+  width: 100%;
+}
+.typeans{
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+}
+}

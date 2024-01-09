@@ -18,12 +18,13 @@ import medal from "./images/Medal.svg"
 import { useState } from "react"
 import axios from "axios"
 import { notification } from 'antd';
+import { useNavigate } from "react-router-dom"
 function Tester (){
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [loading, setLoading] = useState(true);
-  
+  const navigate = useNavigate()
   const handleButtonClick = async () => {
     // Check if any input field is empty
     if (!name || !email || !phone) {
@@ -80,21 +81,18 @@ function Tester (){
       setName('');
       setEmail('');
       setPhone('');
+      navigate("/get-a-quote")
     } catch (error) {
       console.error('Error:', error);
       // Handle error
     }finally {
-      // Set loading to false at the end (whether it's successful or not)
       setLoading(true);
     }
   };
-  
-  
-  
   const openNotificationWithIcon = (type, formData) => {
     notification[type]({
       message: 'Thank you for registering',
-      description: `${formData.data[0].Name}, you will be contacted shortly!`,
+      description: `${formData.data[0].Name}, Thank you for providing your contact information!`,
     });
   };
   
