@@ -3,7 +3,7 @@ import circle from "./images/CircleWavyCheck.svg"
 import medal from "./images/Medal_black.svg"
 import arrowright from "./images/ArrowRight_black.svg"
 import sectionimg from "./images/section_title_shape.png"
-
+import Link from "react-router-dom"
 function Educate (){
   useEffect(() => {
     const owlOptions = {
@@ -175,9 +175,9 @@ function Educate (){
           </span>{" "}
           <small>
             Have the best insurance in your hands right now,{" "}
-            <a href="#">
+            <Link to="/get-a-quote">
               Get your quote <img src={arrowright} alt="" />
-            </a>
+            </Link>
           </small>
         </h4>
       </div>

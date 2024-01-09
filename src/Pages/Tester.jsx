@@ -18,7 +18,7 @@ import medal from "./images/Medal.svg"
 import { useState } from "react"
 import axios from "axios"
 import { notification } from 'antd';
-import { useNavigate } from "react-router-dom"
+import { useNavigate,Link } from "react-router-dom"
 function Tester (){
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -308,9 +308,9 @@ function Tester (){
                 </span>{" "}
                 <small>
                   Have the best insurance in your hands right now,{" "}
-                  <a href="#">
+                  <Link to="/get-a-quote">
                     Get your quote <i style={{fontWeight:"bold"}} class="fa-solid fa-arrow-right-long"></i>
-                  </a>
+                  </Link>
                 </small>
               </h4>
             </div>
