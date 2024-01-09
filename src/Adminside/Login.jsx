@@ -12,7 +12,7 @@ const LoginPage = ({ setLoggedIn }) => {
     if (email === 'sergio@bceins.com' && password === 'Master@5667') {
       setLoggedIn(true);
       navigate('/dashboard'); // Use navigate to go to the dashboard page
-    } else if(email === 'sbolanos@bceins.com' && password === 'Melvin@') {
+    } else if(email === 'sbolanos@bceins.com' && password === 'Melvin@BCE') {
       setLoggedIn(true);
       navigate('/dashboard'); 
     }else{
