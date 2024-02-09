@@ -77,9 +77,9 @@ function Navbar(){
         <Link to="/login" className="common__btn" >
           Login
         </Link>
-        <a href="#" className="common__btn dark_bg_btn">
+        <Link to="/get-a-quote" className="common__btn dark_bg_btn">
           Get a quote
-        </a>
+        </Link>
       </div>
     </div>
     <div className="close__menu">
