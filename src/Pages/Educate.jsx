@@ -175,7 +175,7 @@ function Educate (){
           </span>{" "}
           <small>
             Have the best insurance in your hands right now,{" "}
-            <Link to="/get-a-quote">
+            <Link to="/quote">
               Get your quote <img src={arrowright} alt="" />
             </Link>
           </small>

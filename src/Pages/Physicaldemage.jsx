@@ -63,10 +63,10 @@ function Physicaldemage(){
             </p>
           </div>
           <div className="similar__btn__blk">
-            <a href="#">Get a quote</a>
-            <a href="#" className="btn_bg_transparent">
+            <Link to="/quote">Get a quote</Link>
+            <Link to="/contactus" className="btn_bg_transparent">
               Contact us
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col-xl-6">

@@ -77,7 +77,7 @@ function Navbar(){
         <Link to="/login" className="common__btn" >
           Login
         </Link>
-        <Link to="/get-a-quote" className="common__btn dark_bg_btn">
+        <Link to="/quote" className="common__btn dark_bg_btn">
           Get a quote
         </Link>
       </div>
@@ -145,7 +145,7 @@ function Navbar(){
             {/* <Link to="/login" className="common__btn dark_bg_btn">
               Login
             </Link> */}
-            <Link to="/get-a-quote" className="common__btn">
+            <Link to="/quote" className="common__btn">
               Get a quote
             </Link>
           </div>

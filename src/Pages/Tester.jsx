@@ -81,7 +81,7 @@ function Tester (){
       setName('');
       setEmail('');
       setPhone('');
-      navigate("/get-a-quote")
+      navigate("/quote")
     } catch (error) {
       console.error('Error:', error);
       // Handle error
@@ -308,7 +308,7 @@ function Tester (){
                 </span>{" "}
                 <small>
                   Have the best insurance in your hands right now,{" "}
-                  <Link to="/get-a-quote">
+                  <Link to="/quote">
                     Get your quote <i style={{fontWeight:"bold"}} class="fa-solid fa-arrow-right-long"></i>
                   </Link>
                 </small>

@@ -27,7 +27,7 @@ function App() {
         <Route path="/general-liability-insurance" element={<Generalliabilityinsurance />} />
         <Route path="/motor-cargo-insurance" element={<Motorcargoinsurance />} />
         <Route path="/physical-damage-insurance" element={<Physicaldemage />} />
-        <Route path='/get-a-quote' element={<Main />} />
+        <Route path='/quote' element={<Main />} />
         <Route path="/contactus" element={<Contactus />} />
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path='/' element={<Tester />} />
