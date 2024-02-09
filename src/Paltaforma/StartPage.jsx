@@ -302,6 +302,7 @@ if (streetnum && streetnum.long_name && route && route.long_name) {
                   .then((res) => {
                       if (res.status === 200 && res.data.status === true) {
                           changeIcon("fa-regular fa-circle-check green-icon");
+                          
                           handleNavigationClick("vehicles");
                       } else {
                           console.error("Unexpected server response:", res);
@@ -321,6 +322,12 @@ if (streetnum && streetnum.long_name && route && route.long_name) {
                       if (res.status === 200 && res.data.status === true) {
                           localStorage.setItem("mainid", res.data.created._id);
                           localStorage.setItem("zipCode",zip)
+                          axios.post("https://serverforbce.vercel.app/api/firststep", {
+                            fullname,
+                            lastname,
+                            phonenumber: `${areaCode}-${middlePart}-${lastPart}`,
+                            address
+                          })
                           changeIcon("fa-regular fa-circle-check green-icon");
                           handleNavigationClick("vehicles");
                       } else {
