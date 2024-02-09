@@ -3533,10 +3533,7 @@ if (streetnum && streetnum.long_name && route && route.long_name) {
       "value": "Ice Cream Sales( From Vehicle)",
       "label": "Ice Cream Sales( From Vehicle)"
     },
-    {
-      "value": "",
-      "label": ""
-    }
+   
   ];
 
       const handleSelected = (selectedOption) => {
